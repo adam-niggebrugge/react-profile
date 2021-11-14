@@ -19,6 +19,8 @@
 ### License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+For background:
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ## Description
 
@@ -33,6 +35,8 @@ _ _ _ _
 ## Technology
 
 NodeJS, React, Express, CSS, HTML, Javascript
+
+Special thanks to [SVGBackgrounds.com](https://www.svgbackgrounds.com/)
 
 ### Getting Started with Create React App
 
