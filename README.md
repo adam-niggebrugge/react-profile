@@ -36,7 +36,7 @@ _ _ _ _
 
 NodeJS, React, Express, CSS, HTML, Javascript
 
-Special thanks to [SVGBackgrounds.com](https://www.svgbackgrounds.com/)
+Special thanks to [SVGBackgrounds.com](https://www.svgbackgrounds.com/) for some cool backgrounds.
 
 ### Getting Started with Create React App
 
