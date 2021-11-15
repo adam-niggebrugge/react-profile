@@ -11,14 +11,6 @@
   color: var(--highlight);
 }
 
-.custom-image{
-  max-width: 1.66em;
-  color: var(--attention-highlight);
-}
-
-.list-inline li{
-  display: inline-block;
-}
 
 .transform{
   transform: translate3d(-50%, 239.686px, 0px); 
