@@ -1,37 +1,3 @@
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: var(--highlight);
-}
-
-
-.transform{
-  transform: translate3d(-50%, 239.686px, 0px); 
-  opacity: 1;
- }
-
- .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: var(--light);
-}
-
-.page-title{
-  color: var(--light);
-  background-image: linear-gradient(120deg, var(--shadow), var(--neutral));
-  border-radius: 80px;
-  padding: .5em;
-}
-
-.header-name{
-  color: var(--bold);
-  font-style: oblique;
 }

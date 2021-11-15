@@ -28,6 +28,7 @@ body {
   background-image: url("./images/subtle-prism.svg");
   background-attachment: fixed;
   background-size: cover;
+  z-index: -5;
 }
 
 code {
