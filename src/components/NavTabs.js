@@ -1,7 +1,7 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
-import logo from '../images/nai_logo192x192.png'
+import logo from './images/nai_logo192x192.png'
 import './styles/NavTabs.css';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
