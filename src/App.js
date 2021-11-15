@@ -1,4 +1,4 @@
-
+import  MailIcon from '@mui/icons-material/Mail';
 import './App.css';
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         <li>
           <p>Send Feedback
             <a href = "mailto:adam.niggebrugge@gmail.com?subject = Feedback&body = Message">
-              <i className="material-icons custom-image">mail</i> 
+              <svg data-testid="MailIcon">${MailIcon}</svg> 
             </a>
           </p>
         </li>
