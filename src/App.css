@@ -10,3 +10,8 @@
 .App-link {
   color: var(--highlight);
 }
+
+.custom-image{
+  /* max-width: 1.66em; */
+  color: var(--attention-highlight);
+}

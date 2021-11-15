@@ -1,4 +1,4 @@
-import background from "./images/subtle-prism.svg";
+
 import './App.css';
 
 function App() {
@@ -6,18 +6,36 @@ function App() {
     <div className="cust-background">
       <header className="App-header">
         
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <footer>
+      <p className="flow-text">Developed by NAI Copyright 2021
+        Background Images from <a target="_blank" rel="noreferrer noopener" href="https://www.svgbackgrounds.com/">SVGBackgrounds.com</a>
+      </p>
+
+    <ul className="light flow-text list-inline">
+        <li>
+          <p>Check me out on GitHub
+            <a target="_blank" rel="noreferrer noopener" href="https://github.com/adam-niggebrugge">
+            <img alt="github logo" className="custom-image" src="/images/github.png" />
+            </a>
+          </p> 
+        </li>
+        <li>
+          <p>Check me out on LinkedIn
+            <a target="_blank" rel="noreferrer noopener" href="http://www.linkedin.com/in/adam-niggebrugge">
+              <img alt="linkedIn logo" className="custom-image" src="/images/linkedIN.png"/>
+            </a>
+          </p> 
+        </li>
+        <li>
+          <p>Send Feedback
+            <a href = "mailto:adam.niggebrugge@gmail.com?subject = Feedback&body = Message">
+              <i className="material-icons custom-image">mail</i> 
+            </a>
+          </p>
+        </li>
+      </ul>
+      </footer>
     </div>
   );
 }
