@@ -1,18 +1,33 @@
-import React from "react";
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
-// Whenever we try to render an array containing JSX, React knows to render each JSX element separately
-function List(props) {
+export default function ImgMediaCard(props) {
   return (
-    <ul className="list-group">
-      {/* Here we map over each grocery item and return a new array of `li` elements that contains the grocery name */}
-      {/* When using map you must provide a unique key attribute to each item. Ours is `item.id` */}
-      {props.groceries.map(item => (
-        <li className="list-group-item" key={item.id}>
-          {item.name}
-        </li>
-      ))}
-    </ul>
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="/images/ProfilePic.jpg"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
   );
 }
-
-export default List;

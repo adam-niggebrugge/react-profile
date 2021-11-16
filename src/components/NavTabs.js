@@ -47,9 +47,9 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="cust-up-margin">
         <a
           href="#Projects"
-          onClick={() => handlePageChange('Projects')}
-          // Check to see if the currentPage is `Projects`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Projects' ? 'nav-link active btn btn-cust' : 'nav-link btn btn-cust'}
+          onClick={() => handlePageChange('ProjectList')}
+          // Check to see if the currentPage is `ProjectList`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'ProjectList' ? 'nav-link active btn btn-cust' : 'nav-link btn btn-cust'}
         >
           Projects
         </a>
@@ -88,9 +88,9 @@ function NavTabs({ currentPage, handlePageChange }) {
           <li>
               <a
                 href="#Projects"
-                onClick={() => handlePageChange('Projects')}
-                // Check to see if the currentPage is `Projects`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                className={currentPage === 'Projects' ? 'nav-link active btn btn-cust' : 'nav-link btn btn-cust'}
+                onClick={() => handlePageChange('ProjectList')}
+                // Check to see if the currentPage is `ProjectList`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+                className={currentPage === 'ProjectList' ? 'nav-link active btn btn-cust' : 'nav-link btn btn-cust'}
               >Projects</a>
           </li>
           <li>
