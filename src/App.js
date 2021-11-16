@@ -2,6 +2,7 @@ import './App.css';
 import PortfolioContainer from "./components/PortfolioContainer";
 
 const App = () =>
-  <PortfolioContainer />;
-
+  <main className="cust-background">
+    <PortfolioContainer />;
+  </main>
 export default App;
