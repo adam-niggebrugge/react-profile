@@ -1,5 +1,11 @@
 .App-link {
   color: var(--highlight);
 }
-
+.cust-background{
+  background-color: var(--light);
+  background-image: url("./images/subtle-prism.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -5;
+}
 
