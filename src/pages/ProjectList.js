@@ -1,6 +1,6 @@
 import React from 'react';
-import portfolio from '../../portfolio'
-import ImgMediaCard from '../ImgMediaCard';
+import portfolio from '../portfolio'
+import ImgMediaCard from '../components/ImgMediaCard/ImgMediaCard';
 
 export default function ProjectList() {
     return (
