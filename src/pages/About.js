@@ -1,7 +1,6 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
-import '../styles/Header.css';
-import profilePic from '../../images/ProfilePic.jpg';
+import profilePic from '../images/ProfilePic.jpg';
 
 
 

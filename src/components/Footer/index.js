@@ -1,8 +1,8 @@
 import  MailIcon from '@mui/icons-material/Mail';
 import 'materialize-css';
-import './styles/Footer.css';
-import gitIcon from "../images/github.png";
-import linkedInIcon from "../images/linkedIN.png";
+import './Footer.css';
+import gitIcon from "../../images/github.png";
+import linkedInIcon from "../../images/linkedIN.png";
 
 function Footer() {
   return (

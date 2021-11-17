@@ -1,7 +1,7 @@
 //Basic React set up
 import './App.css';
 //React component for navigation
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //Universal components to be rendered on all pages
 import Footer from "./components/Footer";
@@ -16,17 +16,23 @@ import ProjectList from "./pages/ProjectList";
 
 function App () {
   return ( 
+    <>
+    {/* Wrap page elements in Router component to keep track of location state */}
     <Router> 
       <Header />
       <NavTabs />
       <main className="cust-background">
-        <Route exact path="/" component={Home} />
-        <Route exact path="/portfolio" component={ProjectList} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
+        {/* Define routes to render different page components at different paths */}
+        <Routes>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/portfolio" component={ProjectList} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+        </Routes>
       </main>
-    <Footer />
+      <Footer />
     </Router>
+    </>
   )
 }
 export default App;
