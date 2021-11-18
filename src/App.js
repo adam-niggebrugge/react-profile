@@ -24,10 +24,10 @@ function App () {
       <main className="cust-background">
         {/* Define routes to render different page components at different paths */}
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/portfolio" component={ProjectList} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/projects" element={<ProjectList/>} />
+          <Route exact path="/about" element={<About/>} />
+          <Route exact path="/contact" element={<Contact/>} />
         </Routes>
       </main>
       <Footer />
