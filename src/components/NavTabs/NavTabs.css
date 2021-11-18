@@ -3,24 +3,22 @@
 }
 .cust-logo{
     float: left; 
-    margin: -70px 15px 15px 0px;
+    margin: -65px 15px 15px 0px;
 }
 
-.flip-banner-red {
-    background-image: linear-gradient(to left, var(--bold-transparancy), var(--bold) );
-    color: var(--netural);
-    border-radius: 12px;
+.custNav {
+    background-image: linear-gradient(to left, var(--glass), var(--bold) );
+    color: var(--glaucous);
     padding: .5em;
 }
 
-.btn-cust{
+.cust-link{
     background-color: var(--highlight);
     border-radius: 20px;
+    font-family: Galindo, cursive;
+    margin: -5px 0 0 0;
 }
 
-.cust-up-margin{
-    margin-top: -2em;
-}
  
 @media only screen and (max-width : 992px) { 
   .cust-up-margin{

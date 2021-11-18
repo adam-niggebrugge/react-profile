@@ -12,42 +12,42 @@ function NavTabs({ currentPage, handlePageChange }) {
   M.Sidenav.init(sidenav, {});
 
   return (
-    <div id="home" className="flip-banner-red">
-      <nav  id="navbar"  className="navbar banner-purple" role="navigation">
+    <>
+      <nav  id="navbar"  className="custNav" role="navigation">
         <div className="cust-center">
-          <img alt="logo" className="cust-logo" src={logo}/>
+          <img alt="logo" className="cust-logo hide-on-med-and-down" src={logo}/>
         </div>
         <a href="#home" data-target="nav-mobile" className="sidenav-trigger">
-          <i  className="material-icons">menu</i>
+          <i  className="material-icons cust-link">menu</i>
         </a>
       <div className="nav-wrapper container">
 
-    <ul className="banner-red hide-on-med-and-down">
-      <li className="cust-up-margin">
+    <ul className="right hide-on-med-and-down">
+      <li>
         <Link
           to="/"
-          className={'btn btn-cust'}
+          className={'cust-link'}
         >Home
         </Link>
       </li>
-      <li className="cust-up-margin">
+      <li>
         <Link
           to="/about"
-          className={'btn btn-cust'}
+          className={'cust-link'}
         >About
         </Link>
       </li>
-      <li className="cust-up-margin">
+      <li>
         <Link
-          to="/Projects"
-          className={'btn btn-cust'}
+          to="/projects"
+          className={'cust-link'}
         >Projects
         </Link>
       </li>
-      <li className="cust-up-margin">
+      <li>
         <Link
           to="/contact"
-          className={'btn btn-cust'}
+          className={'cust-link'}
         >Contact
         </Link>
       </li>
@@ -55,32 +55,33 @@ function NavTabs({ currentPage, handlePageChange }) {
     </div>
     </nav>
     <ul id="nav-mobile" className="sidenav cust-sidenav banner">
+        <img alt="logo" src={logo}/>
           <li>
             <Link
               to="/"
-              className={'btn sidenav-close btn-cust'}
+              className={'btn sidenav-close cust-link'}
             >Home</Link>
           </li>
           <li>
             <Link
               to="/about"
-              className={'btn sidenav-close btn-cust'}
+              className={'btn sidenav-close cust-link'}
               >About</Link>
           </li>
           <li>
               <Link
-                to="/Projects"
-                className={'btn sidenav-close btn-cust'}
+                to="/projects"
+                className={'btn sidenav-close cust-link'}
                 >Projects</Link>
           </li>
           <li>
               <Link
                 to="/contact"
-                className={'btn sidenav-close btn-cust'}
+                className={'btn sidenav-close cust-link'}
                 >Contact</Link>
           </li>
         </ul>
-  </div>
+    </>
   );
 }
 
