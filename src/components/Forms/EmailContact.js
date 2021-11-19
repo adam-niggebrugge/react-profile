@@ -1,99 +1,109 @@
-import React from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min.js';
-import logo from '../../images/nai_logo192x192.png'
-import './NavTabs.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useForm } from "react-hook-form";
+
+import Button from '@mui/material/Button';
+import "materialize-css/dist/css/materialize.min.css";
+import Grid from "@mui/material/Grid";
+
+
 
 function EmailContact () {
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors }
+      } = useForm();
+      
+      const onSubmit = async (data) => {
+        const { name, email, subject, message } = data;
+        
+        console.log("Name: ", name);
+        console.log("Email: ", email);
+        console.log("Subject: ", subject);
+        console.log("Message: ", message);
+        reset({});
+      };
     return (
-        <Grid container spacing={2}>
-        <Grid item xs={6} className="text-center">
-            <Title>
-              I am taking new projects. 
-              If you would like to chat, please get in touch.
-            </Title>
-        </Grid>
-        <Grid item xs={12} className="text-center">
-          <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
+    <>
+        <Grid item xs={12}>
+          <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
-                <div className='row formRow'>
-                  <div className='col-6'>
+                <Grid xs={12}>
+                  <Grid md={6} xs={12}>
                     <input
-                      type='text'
-                      name='name'
-                      {...register('name', {
-                        required: { value: true, message: 'Please enter your name' },
+                      type="text"
+                      name="name"
+                      {...register("name", {
+                        required: { value: true, message: "Please enter your name" },
                         maxLength: {
                           value: 30,
-                          message: 'Please use 30 characters or less'
+                          message: "Please use 30 characters or less"
                         }
                       })}
-                      className='form-control formInput'
-                      placeholder='Name'
+                      className="form-control formInput"
+                      placeholder="Name"
                     ></input>
-                    {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
-                  </div>
-                  <div className='col-6'>
+                    {errors.name && <span className="errorMessage">{errors.name.message}</span>}
+                  </Grid>
+                  <Grid xs={12}>
                     <input
-                      type='email'
-                      name='email'
-                      {...register('email', {
+                      type="email"
+                      name="email"
+                      {...register("email", {
                         required: true,
                         pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                       })}
-                      className='form-control formInput'
-                      placeholder='Email address'
+                      className="form-control formInput"
+                      placeholder="Email address"
                     ></input>
                     {errors.email && (
-                      <span className='errorMessage'>Please enter a valid email address</span>
+                      <span className="errorMessage">Please enter a valid email address</span>
                     )}
-                  </div>
-                </div>
+                  </Grid>
+                </Grid>
                 {/* Row 2 of form */}
-                <div className='row formRow'>
-                  <div className='col'>
+                <Grid xs={12}>
+                  <Grid xs={12}>
                     <input
-                      type='text'
-                      name='subject'
-                      {...register('subject', {
-                        required: { value: true, message: 'Please enter a subject' },
+                      type="text"
+                      name="subject"
+                      {...register("subject", {
+                        required: { value: true, message: "Please enter a subject" },
                         maxLength: {
                           value: 75,
-                          message: 'Subject cannot exceed 75 characters'
+                          message: "Subject cannot exceed 75 characters"
                         }
                       })}
-                      className='form-control formInput'
-                      placeholder='Subject'
+                      className="form-control formInput"
+                      placeholder="Subject"
                     ></input>
                     {errors.subject && (
-                      <span className='errorMessage'>{errors.subject.message}</span>
+                      <span className="errorMessage">{errors.subject.message}</span>
                     )}
-                  </div>
-                </div>
+                  </Grid>
+                </Grid>
                 {/* Row 3 of form */}
-                <div className='row formRow'>
-                  <div className='col'>
+                <Grid className="row formRow">
+                  <Grid xs={12} sx={{gridRow: 'span 4'}}>
                     <textarea
-                      rows={3}
-                      name='message'
-                      {...register('message', {
+                      name="message"
+                      {...register("message", {
                         required: true
                       })}
-                      className='form-control formInput'
-                      placeholder='Message'
+                      className="form-control formInput"
+                      placeholder="Message"
                     ></textarea>
-                    {errors.message && <span className='errorMessage'>Please enter a message</span>}
-                  </div>
-                </div>
-                <button className='submit-btn' type='submit'>
+                    {errors.message && <span className="errorMessage">Please enter a message</span>}
+                  </Grid>
+                </Grid>
+                <Button variant="contained" type="submit">
                   Submit
-                </button>
-              </form>
+                </Button>
+            </form>
         </Grid>
-      </Grid>
-    </Box>
-    )
+    </>
+   )
 }
 
 export default EmailContact;
