@@ -63,3 +63,9 @@ code {
   padding-right: 5px;
   padding-left: 5px;
 }
+
+.shadowed {
+  background-color: var(--shadow);
+  padding: 2em;
+  margin: 1em;
+}
