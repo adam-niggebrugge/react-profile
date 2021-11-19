@@ -19,8 +19,8 @@ function App () {
     <>
     {/* Wrap page elements in Router component to keep track of location state */}
     <Router> 
-      <Header />
       <NavTabs />
+      <Header />
       <main className="cust-background">
         {/* Define routes to render different page components at different paths */}
         <Routes>
