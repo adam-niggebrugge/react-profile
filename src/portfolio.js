@@ -3,11 +3,11 @@ const portfolio = {
    home:{
       header:{ 
          headerTitle : "Welcome",
-         headerBackground: "red"
+         headerBackground: "red",
+         style: "hero",
       },
       greeting: "Want some help",
       body: "Navigating the code of business is tough enough. Let me help you code your visions into a digital reality!",
-
    },
    about:{
       header:{ 

@@ -1,3 +1,6 @@
+footer {
+  align-self: flex-end;
+}
 .custom-image{
     max-width: 1.66em;
     color: var(--attention-highlight);

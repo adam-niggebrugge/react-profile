@@ -29,8 +29,8 @@ function EmailContact () {
         <Grid item xs={12}>
           <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
-                <Grid xs={12}>
-                  <Grid md={6} xs={12}>
+                <Grid item xs={12}>
+                  <Grid item md={6} xs={12}>
                     <input
                       type="text"
                       name="name"
@@ -46,7 +46,7 @@ function EmailContact () {
                     ></input>
                     {errors.name && <span className="errorMessage">{errors.name.message}</span>}
                   </Grid>
-                  <Grid xs={12}>
+                  <Grid item xs={12}>
                     <input
                       type="email"
                       name="email"
@@ -63,8 +63,8 @@ function EmailContact () {
                   </Grid>
                 </Grid>
                 {/* Row 2 of form */}
-                <Grid xs={12}>
-                  <Grid xs={12}>
+                <Grid item xs={12}>
+                  <Grid item xs={12}>
                     <input
                       type="text"
                       name="subject"
@@ -85,7 +85,7 @@ function EmailContact () {
                 </Grid>
                 {/* Row 3 of form */}
                 <Grid className="row formRow">
-                  <Grid xs={12} sx={{gridRow: 'span 4'}}>
+                  <Grid item xs={12} sx={{gridRow: 'span 4'}}>
                     <textarea
                       name="message"
                       {...register("message", {

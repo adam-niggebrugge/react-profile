@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //Universal components to be rendered on all pages
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import NavTabs from "./components/NavTabs";
 
 //Pages to be displayed
@@ -18,12 +17,11 @@ import Portfolio from "./portfolio";
 
 function App () {
   return ( 
-    <>
+    <div className="cust-background">
     {/* Wrap page elements in Router component to keep track of location state */}
     <Router> 
       <NavTabs />
-      <Header />
-      <main className="cust-background">
+      <main>
         {/* Define routes to render different page components at different paths */}
         <Routes>
           <Route exact path="/" element={<Home data={Portfolio.home}/>} />
@@ -34,7 +32,7 @@ function App () {
       </main>
       <Footer />
     </Router>
-    </>
+    </div>
   )
 }
 export default App;

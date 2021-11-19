@@ -6,9 +6,7 @@ import Title from "../components/core/Title";
 import EmailContact from "../components/Forms/EmailContact";
 import fillerPic from "../images/mail.png";
 
-
 const Contact = () => {
-
 
   return (
     <>

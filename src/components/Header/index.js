@@ -2,14 +2,14 @@ import React from 'react';
 
 import Title from "../core/Title";
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <Title>
-
+    <header>
+      <div className={props.data.headerBackground}>
+        <Title variant={props.data.style}>
+            {props.data.headerTitle}
         </Title>
-        <p className="m-0">Get into the mind of a programmer.</p>
+        <p className="m-0">{props.data.text}</p>
       </div>
     </header>
   );
