@@ -14,6 +14,8 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import ProjectList from "./pages/ProjectList";
 
+import Portfolio from "./portfolio";
+
 function App () {
   return ( 
     <>
@@ -24,10 +26,10 @@ function App () {
       <main className="cust-background">
         {/* Define routes to render different page components at different paths */}
         <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route exact path="/projects" element={<ProjectList/>} />
-          <Route exact path="/about" element={<About/>} />
-          <Route exact path="/contact" element={<Contact/>} />
+          <Route exact path="/" element={<Home data={Portfolio.home}/>} />
+          <Route exact path="/projects" element={<ProjectList data={Portfolio.projectList}/>} />
+          <Route exact path="/about" element={<About data={Portfolio.about}/>} />
+          <Route exact path="/contact" element={<Contact data={Portfolio.contact}/>} />
         </Routes>
       </main>
       <Footer />

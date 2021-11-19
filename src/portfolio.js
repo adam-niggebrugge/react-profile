@@ -1,24 +1,33 @@
 const portfolio = {
    
    home:{
-      headerTitle : "Welcome",
-      headerBackground: "red",
-      body: "a quick blurb of what this site is",
+      header:{ 
+         headerTitle : "Welcome",
+         headerBackground: "red"
+      },
+      greeting: "Want some help",
+      body: "Navigating the code of business is tough enough. Let me help you code your visions into a digital reality!",
 
    },
    about:{
-      headerTitle : "On a Personal Note",
-      headerBackground: "blue",
+      header:{ 
+         headerTitle : "On a Personal Note",
+         headerBackground: "blue",
+      },
       body: "About me personal content goes here",
    },
    contact:{
-      headerTitle : "Let's get in Touch",
-      headerBackground: "grey",
+      header:{ 
+         headerTitle : "Let's get in Touch",
+         headerBackground: "grey",
+      },
       body: "Might be nothing here",
    },
    projectList : {
-      headerTitle : "My Projects",
-      headerBackground: "green",
+      header:{ 
+         headerTitle : "My Projects",
+         headerBackground: "green",
+      },
       projects: [
             {
                title: "Trail Finder",
