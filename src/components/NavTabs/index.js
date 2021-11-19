@@ -23,28 +23,28 @@ function NavTabs({ currentPage, handlePageChange }) {
       <div className="nav-wrapper container">
 
     <ul className="right hide-on-med-and-down">
-      <li>
+      <li className="float-up">
         <Link
           to="/"
           className={"btn-small waves-light cust-button"}
         >Home
         </Link>
       </li>
-      <li>
+      <li className="float-up">
         <Link
           to="/about"
           className={"btn-small waves-light cust-button"}
         >About
         </Link>
       </li>
-      <li>
+      <li className="float-up">
         <Link
           to="/projects"
           className={"btn-small waves-light cust-button"}
         >Projects
         </Link>
       </li>
-      <li>
+      <li className="float-up">
         <Link
           to="/contact"
           className={"btn-small waves-light cust-button"}
