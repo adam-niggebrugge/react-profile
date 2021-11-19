@@ -1,4 +1,10 @@
+import React from "react";
 import { useForm } from 'react-hook-form';
+import Container from '@mui/material/Container';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Title from '../components/core/Title';
 
 const Contact = () => {
   const {
@@ -18,12 +24,22 @@ const Contact = () => {
   };
 
   return (
-    <div className='ContactForm'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center'>
-            <div className='contactForm'>
-              <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
+    <>
+    {/* <!-- Hero Area --> */}
+    <section className="position-relative">
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={1}>
+        <Grid item xs={12} className="text-center">
+          <item>
+            <Title variant="secSm">
+              I am taking new projects. 
+              If you would like to chat, please get in touch.
+            </Title>
+          </item>
+        </Grid>
+        <Grid item xs={12} className="text-center">
+          <item className="d-flex flex-column flex-lg-row justify-content-center">
+          <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
                 <div className='row formRow'>
                   <div className='col-6'>
@@ -98,11 +114,12 @@ const Contact = () => {
                   Submit
                 </button>
               </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </item>
+        </Grid>
+      </Grid>
+    </Box>
+  </section>
+</>
   );
 };
 
