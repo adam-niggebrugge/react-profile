@@ -17,8 +17,6 @@
   .header-name{
     color: var(--bold);
     font-style: oblique;
-    font-family: Galindo, cursive;
-    text-align: center;
   }
 
   .cosmos{
@@ -26,9 +24,13 @@
     background-size: 100% auto;
     background-position: center top;
     background-repeat: no-repeat;
-    margin-top: -.5em;
+    margin-top: -.05em;
     padding-top: .5em;
-    padding-bottom: 50em;
+    padding-bottom: 25em;
+    text-align: center;
   }
 
+  .cosmos h3 {
+    color: var(--mildlight);
+  }
   

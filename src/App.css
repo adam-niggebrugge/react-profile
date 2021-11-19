@@ -7,6 +7,6 @@
   background-attachment: fixed;
   background-size: cover;
   z-index: -5;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 

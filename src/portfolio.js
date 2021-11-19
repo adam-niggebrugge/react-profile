@@ -2,9 +2,9 @@ const portfolio = {
    
    home:{
       header:{ 
-         headerTitle : "Welcome",
+         headerTitle : "Eat. Code. Sleep.",
          headerBackground: "cosmos",
-         subTitle: "To my React Portfolio!!",
+         subTitle: "Lets find a solution together",
          style: "hero",
       },
       greeting: "Want some help",

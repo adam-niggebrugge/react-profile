@@ -1,5 +1,6 @@
 footer {
   align-self: flex-end;
+  min-width: 100%;
 }
 .custom-image{
     max-width: 1.66em;
