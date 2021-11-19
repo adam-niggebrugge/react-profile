@@ -1,14 +1,14 @@
-import React from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min.js';
-import logo from '../../images/nai_logo192x192.png'
-import './NavTabs.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "materialize-css/dist/css/materialize.min.css";
+import M from "materialize-css/dist/js/materialize.min.js";
+import logo from "../../images/nai_logo192x192.png"
+import "./NavTabs.css";
+import { Link } from "react-router-dom";
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
-  let sidenav = document.querySelector('#nav-mobile');
+  let sidenav = document.querySelector("#nav-mobile");
   M.Sidenav.init(sidenav, {});
 
   return (
@@ -18,7 +18,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           <img alt="logo" className="cust-logo hide-on-med-and-down" src={logo}/>
         </div>
         <a href="#home" data-target="nav-mobile" className="sidenav-trigger">
-          <i  className="material-icons cust-link">menu</i>
+          <i  className="material-icons cust-button">menu</i>
         </a>
       <div className="nav-wrapper container">
 
@@ -26,28 +26,28 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li>
         <Link
           to="/"
-          className={'cust-link'}
+          className={"btn-small waves-light cust-button"}
         >Home
         </Link>
       </li>
       <li>
         <Link
           to="/about"
-          className={'cust-link'}
+          className={"btn-small waves-light cust-button"}
         >About
         </Link>
       </li>
       <li>
         <Link
           to="/projects"
-          className={'cust-link'}
+          className={"btn-small waves-light cust-button"}
         >Projects
         </Link>
       </li>
       <li>
         <Link
           to="/contact"
-          className={'cust-link'}
+          className={"btn-small waves-light cust-button"}
         >Contact
         </Link>
       </li>
@@ -59,25 +59,25 @@ function NavTabs({ currentPage, handlePageChange }) {
           <li>
             <Link
               to="/"
-              className={'btn sidenav-close cust-link'}
+              className={"btn-large waves-light sidenav-close cust-button"}
             >Home</Link>
           </li>
           <li>
             <Link
               to="/about"
-              className={'btn sidenav-close cust-link'}
+              className={"btn-large waves-light sidenav-close cust-button"}
               >About</Link>
           </li>
           <li>
               <Link
                 to="/projects"
-                className={'btn sidenav-close cust-link'}
+                className={"btn-large waves-light sidenav-close cust-button"}
                 >Projects</Link>
           </li>
           <li>
               <Link
                 to="/contact"
-                className={'btn sidenav-close cust-link'}
+                className={"btn-large waves-light sidenav-close cust-button"}
                 >Contact</Link>
           </li>
         </ul>

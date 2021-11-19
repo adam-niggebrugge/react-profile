@@ -8,17 +8,20 @@
 
 .custNav {
     background-image: linear-gradient(to left, var(--glass), var(--bold) );
-    color: var(--glaucous);
     padding: .5em;
+    margin: .25em;
 }
 
-.cust-link{
+.cust-button{
     background-color: var(--highlight);
-    border-radius: 20px;
     font-family: Galindo, cursive;
-    margin: -5px 0 0 0;
+    margin: -25px 0 0 0;
+    border-radius: 10px;
 }
 
+.cust-link:hover {
+    background-color: var(--mildlight)
+}
  
 @media only screen and (max-width : 992px) { 
   .cust-up-margin{
