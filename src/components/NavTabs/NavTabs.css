@@ -13,16 +13,16 @@
 }
 
 .cust-button{
-    background-color: var(--highlight);
+    background-color: var(--glaucous);
     font-family: Galindo, cursive;
-    margin: -25px 0 0 0;
+    margin: -50px 0 0 0;
     border-radius: 10px;
 }
 
-.cust-link:hover {
-    background-color: var(--mildlight)
+.cust-button:hover {
+    background-color: var(--bold)
 }
- 
+
 @media only screen and (max-width : 992px) { 
   .cust-up-margin{
     margin-top: -.5em;

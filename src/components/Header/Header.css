@@ -17,17 +17,9 @@
   .header-name{
     color: var(--bold);
     font-style: oblique;
+    font-family: Galindo, cursive;
   }
 
-  .transform{
-    transform: translate3d(-50%, 239.686px, 0px); 
-    opacity: 1;
-   }
   
-   .parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: var(--light);
-  }
+
   
