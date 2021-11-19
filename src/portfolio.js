@@ -3,7 +3,8 @@ const portfolio = {
    home:{
       header:{ 
          headerTitle : "Welcome",
-         headerBackground: "red",
+         headerBackground: "cosmos",
+         subTitle: "To my React Portfolio!!",
          style: "hero",
       },
       greeting: "Want some help",

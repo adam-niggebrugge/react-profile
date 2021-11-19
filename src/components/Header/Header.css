@@ -18,8 +18,17 @@
     color: var(--bold);
     font-style: oblique;
     font-family: Galindo, cursive;
+    text-align: center;
   }
 
-  
+  .cosmos{
+    background-image: url("../../images/cosmos.png");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: -.5em;
+    padding-top: .5em;
+    padding-bottom: 50em;
+  }
 
   

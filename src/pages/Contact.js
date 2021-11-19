@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <>
     <section className="container shadowed">
-      <Box sx={{ flexGrow: 2}}>
+      <Box sx={{ flexGrow: 2}} className="nine columns">
       <Grid container spacing={2}>
         <Grid item xs={12} className="text-center">
             <Title>

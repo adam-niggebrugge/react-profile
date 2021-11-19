@@ -8,6 +8,7 @@ const Header = (props) => {
       <div className={props.data.headerBackground}>
         <Title variant={props.data.style} className="header-name">
             {props.data.headerTitle}
+            <h3>{props.data.subTitle}</h3>
         </Title>
         <p className="m-0">{props.data.text}</p>
       </div>
