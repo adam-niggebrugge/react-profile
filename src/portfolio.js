@@ -4,11 +4,11 @@ const portfolio = {
       header:{ 
          headerTitle : "Eat. Code. Sleep.",
          headerBackground: "cosmos",
-         subTitle: "Lets find a solution together",
+         subTitle: "Together we can shine a light on your ideas!",
          style: "hero",
+         body: "Navigating the code of business is tough enough. Let me help you code your visions into a digital reality!",
       },
       greeting: "Want some help",
-      body: "Navigating the code of business is tough enough. Let me help you code your visions into a digital reality!",
    },
    about:{
       header:{ 
