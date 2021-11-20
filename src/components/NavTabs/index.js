@@ -19,7 +19,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <div className="cust-center">
           <img alt="logo" className="cust-logo hide-on-med-and-down" src={logo}/>
         </div>
-        <a data-target="nav-mobile" className="sidenav-trigger">
+        <a href="#" data-target="nav-mobile" className="sidenav-trigger">
           <i className="large material-icons">menu</i>
         </a>
       <div className="nav-wrapper container">

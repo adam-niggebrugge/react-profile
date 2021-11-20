@@ -47,7 +47,7 @@ const portfolio = {
                body: "MVC architecture is some of the quickest means to implement a \"FULL\" website. In this is an example of code deployed through Heroku servers to allow any user to create an account, create blogs that they alone can edit and to comment on any existing blog. The site was built with Handlebars extension from Express. This is also a NoSQL built site due to the simplicity of the models.",
                siteLink: "https://nai-blog-cms.herokuapp.com/",
                gitLink: "https://github.com/adam-niggebrugge/MVC_TechBlog",
-               imagePath: "../../images/MVC_demo.gif",
+               imagePath: "../../images/MVC_demo600x399.gif",
                altImageText: "Animated image of MVC website",
             },    
             {
