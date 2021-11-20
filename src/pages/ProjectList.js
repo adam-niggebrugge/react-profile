@@ -1,12 +1,13 @@
-import React from 'react';
-import portfolio from '../portfolio'
-import ImgMediaCard from '../components/ImgMediaCard';
+import React from "react";
+//app components
+import ImgMediaCard from "../components/ImgMediaCard";
+import Header from "../components/Header";
 
-export default function ProjectList() {
+export default function ProjectList(props) {
     return (
       <div>
-            <h1>This is my Portfolio</h1>
-                { portfolio.map((project, index) => {
+            <Header data={props.data.header}/>
+                { props.data.projects.map((project, index) => {
                   return (
                       <ImgMediaCard project={project} key={index}/>
                   )

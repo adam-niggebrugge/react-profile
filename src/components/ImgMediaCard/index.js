@@ -11,13 +11,13 @@ export default function ImgMediaCard(props) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt={props.project.altImageText}
         height="140"
-        image="/images/ProfilePic.jpg"
+        image={props.project.imagePath}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {props.project.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
