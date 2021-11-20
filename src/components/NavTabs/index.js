@@ -1,13 +1,15 @@
 import React from "react";
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
-import logo from "../../images/nai_logo192x192.png"
+import logo from "../../images/nai_logo192x192.png";
 import "./NavTabs.css";
 import { Link } from "react-router-dom";
+
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
+  // Materialize side menu activator
   let sidenav = document.querySelector("#nav-mobile");
   M.Sidenav.init(sidenav, {});
 
@@ -17,8 +19,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         <div className="cust-center">
           <img alt="logo" className="cust-logo hide-on-med-and-down" src={logo}/>
         </div>
-        <a href="#home" data-target="nav-mobile" className="sidenav-trigger">
-          <i  className="material-icons cust-button">menu</i>
+        <a data-target="nav-mobile" className="sidenav-trigger">
+          <i className="large material-icons">menu</i>
         </a>
       <div className="nav-wrapper container">
 

@@ -10,12 +10,11 @@ const Header = (props) => {
   return (
     <header>
       <div className={imageClass}>
-        <Title variant={props.data.style} className="header-name flow-text">
+        <Title variant={props.data.style} className="header-name">
             {props.data.headerTitle}
-            
         </Title>
-        <h3>{props.data.subTitle}</h3>
-        <p>{props.data.text}</p>
+        <p className="flow-text home-text-extra" >{props.data.body}</p>
+        <h3 className={props.data.style}> {props.data.subTitle}</h3>
       </div>
     </header>
   );
