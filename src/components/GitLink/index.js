@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import gitHubLogo from "../../images/github.png";
 import "./GitLink.css";
 
@@ -13,7 +12,7 @@ const GitLink = (props) => {
     return (
      <>
         <a className="text-light" target="_blank" rel="noreferrer noopener" href={props.link}>
-          <img alt="link" className="live-website" src={gitHubLogo} />
+          <img alt="link" className="git-website" src={gitHubLogo} />
         </a>
     </>
   );

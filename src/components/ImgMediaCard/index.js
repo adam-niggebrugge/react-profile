@@ -18,7 +18,7 @@ export default function ImgMediaCard(props) {
       <div className="card-reveal">
         <span className="card-title grey-text text-darken-4">{props.project.title}<i className="material-icons right">close</i></span>
         <p>{props.project.body}.</p>
-        <div class="offset-s6">
+        <div className="offset-s6">
           <p className="flow-text valign-wrapper">
             Learn More 
             <GitLink link={props.project.gitLink} />
