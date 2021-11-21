@@ -12,7 +12,7 @@ export default function ProjectList(props) {
           <div className="row">
 
             <div className="twelve columns collapsed">
-              <div className="bgrid-quarters s-bgrid-thirds cf">
+              <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
                     { props.data.projects.map((project, index) => {
                         return (
                             <ImgMediaCard project={project} key={index}/>
