@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/react-profile/static/css/main.623f2bbd.chunk.css",
+    "main.js": "/react-profile/static/js/main.d383cbd9.chunk.js",
+    "main.js.map": "/react-profile/static/js/main.d383cbd9.chunk.js.map",
+    "runtime-main.js": "/react-profile/static/js/runtime-main.e16602e4.js",
+    "runtime-main.js.map": "/react-profile/static/js/runtime-main.e16602e4.js.map",
+    "static/css/2.60cf125e.chunk.css": "/react-profile/static/css/2.60cf125e.chunk.css",
+    "static/js/2.cb741b0c.chunk.js": "/react-profile/static/js/2.cb741b0c.chunk.js",
+    "static/js/2.cb741b0c.chunk.js.map": "/react-profile/static/js/2.cb741b0c.chunk.js.map",
+    "static/js/3.f8a8de90.chunk.js": "/react-profile/static/js/3.f8a8de90.chunk.js",
+    "static/js/3.f8a8de90.chunk.js.map": "/react-profile/static/js/3.f8a8de90.chunk.js.map",
+    "index.html": "/react-profile/index.html",
+    "static/css/2.60cf125e.chunk.css.map": "/react-profile/static/css/2.60cf125e.chunk.css.map",
+    "static/css/main.623f2bbd.chunk.css.map": "/react-profile/static/css/main.623f2bbd.chunk.css.map",
+    "static/js/2.cb741b0c.chunk.js.LICENSE.txt": "/react-profile/static/js/2.cb741b0c.chunk.js.LICENSE.txt",
+    "static/media/ProfilePic.a9db8ae0.jpg": "/react-profile/static/media/ProfilePic.a9db8ae0.jpg",
+    "static/media/Header.css": "/react-profile/static/media/cosmos.65fc1267.png",
+    "static/media/mail.8b2e8f3b.png": "/react-profile/static/media/mail.8b2e8f3b.png",
+    "static/media/nai_logo192x192.1ef4e409.png": "/react-profile/static/media/nai_logo192x192.1ef4e409.png",
+    "static/media/App.css": "/react-profile/static/media/subtle-prism.1c96a167.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e16602e4.js",
+    "static/css/2.60cf125e.chunk.css",
+    "static/js/2.cb741b0c.chunk.js",
+    "static/css/main.623f2bbd.chunk.css",
+    "static/js/main.d383cbd9.chunk.js"
+  ]
+}
