@@ -1,33 +1,32 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+
+import "materialize-css/dist/css/materialize.min.css";
+
+import "./ImgMediaCard.css";
+import LiveLink from "../LiveLink";
+import GitLink from "../GitLink";
 
 export default function ImgMediaCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/images/ProfilePic.jpg"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <section className="card medium hoverable">
+      <figure className="card-image waves-effect waves-block waves-light">
+        <img className="activator" src={props.project.imagePath} alt={props.project.altImageText} />
+      </figure>
+      <div className="card-content">
+        <span className="card-title activator grey-text text-darken-4 banner">{props.project.title}<i className="material-icons right">more_vert</i></span>
+        <LiveLink link={props.project.siteLink} />
+      </div>
+      <div className="card-reveal">
+        <span className="card-title grey-text text-darken-4 banner-alt">{props.project.title}<i className="material-icons right">close</i></span>
+        <p className="light flow-text">{props.project.body}.</p>
+        <div className="offset-s6">
+          <p className="flow-text valign-wrapper">
+            Learn More 
+            <GitLink link={props.project.gitLink} />
+             Visit Github
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }

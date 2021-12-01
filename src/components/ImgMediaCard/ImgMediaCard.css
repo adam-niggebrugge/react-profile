@@ -1,0 +1,40 @@
+/*  Apply a contrasting banner color, style the same with rounded edges */
+.banner-alt{
+    background-image: linear-gradient(120deg, var(--bold-contrast-tranparancy), var(--bold-contrast) );
+    color: var(--attention-highlight);
+    border-radius: 15px;
+    text-align: end;
+    padding: .75em;
+  }
+
+  /* Apply a dark banner style, rounded edges */
+.banner{
+    background-image: linear-gradient(to right, var(--bold-transparancy), var(--bold) );
+    box-shadow: inset 0px 0px 8px var(--netural), 0 0 15px var(--dark);
+    color: var(--netural);
+    border-radius: 12px;
+    padding: .5em;
+  }
+
+  @media only screen and (max-width : 992px) {
+    .banner-alt{
+      padding: .5em;
+    }
+  }
+
+  @media only screen and (max-width : 600px) {
+ 
+    .banner-alt{
+      padding: 0;
+    } 
+    
+    .banner{
+      font-size: 1.2em;
+      padding: .25em;
+    }
+  
+    .card .card-title,
+    .card-title {
+      font-size: 1.2em;
+    } 
+}

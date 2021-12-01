@@ -3,27 +3,31 @@
 }
 .cust-logo{
     float: left; 
-    margin: -70px 15px 15px 0px;
+    margin: -65px 15px 15px 0px;
 }
 
-.flip-banner-red {
-    background-image: linear-gradient(to left, var(--bold-transparancy), var(--bold) );
-    color: var(--netural);
-    border-radius: 12px;
+.custNav {
+    background-image: linear-gradient(to left, var(--glass), var(--bold) );
     padding: .5em;
+    margin: .25em;
 }
 
-.btn-cust{
-    background-color: var(--highlight);
-    border-radius: 20px;
+.cust-button{
+    background-color: var(--glaucous);
+    font-family: Galindo, cursive;
+    border-radius: 10px;
 }
 
-.cust-up-margin{
-    margin-top: -2em;
+.cust-button:hover {
+    background-color: var(--bold)
 }
- 
+
+.float-up{
+    margin-top: -1em;
+}
+
 @media only screen and (max-width : 992px) { 
-  .cust-up-margin{
+  .float-up{
     margin-top: -.5em;
    }
 }

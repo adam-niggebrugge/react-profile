@@ -1,14 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import "./Header.css";
+import Title from "../core/Title";
+import "materialize-css/dist/css/materialize.min.css";
 
-const Header = () => {
+
+const Header = (props) => {
+  let imageClass = props.data.headerBackground.toString()+" responsive-img";
+
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <Link className="text-light" to="/">
-          <h1 className="m-0">Tech Thoughts</h1>
-        </Link>
-        <p className="m-0">Get into the mind of a programmer.</p>
+    <header>
+      <div className={imageClass}>
+        <Title 
+          variant={props.data.style} 
+          className="header-name"
+        >
+          {props.data.headerTitle}
+        </Title>
+
+        <p 
+          className="flow-text home-text-extra" 
+          >{props.data.body}
+        </p>
+
+        <h3 
+          className={props.data.style}>
+            {props.data.subTitle}
+        </h3>
       </div>
     </header>
   );

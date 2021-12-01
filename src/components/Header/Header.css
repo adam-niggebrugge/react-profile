@@ -19,15 +19,22 @@
     font-style: oblique;
   }
 
-  .transform{
-    transform: translate3d(-50%, 239.686px, 0px); 
-    opacity: 1;
-   }
+  .cosmos{
+    background-image: url("../../images/cosmos.png");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: -.05em;
+    padding-top: .5em;
+    padding-bottom: 25em;
+    text-align: center;
+  }
+
+  .cosmos h3 {
+    color: var(--mildlight);
+  }
   
-   .parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: var(--light);
+  .home-text-extra {
+    color: var(--mildlight);
   }
   

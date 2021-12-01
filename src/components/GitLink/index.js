@@ -1,21 +1,21 @@
 import React from 'react';
 
-import liveLinkLogo from "../../images/live-website.png";
-import "./LiveLink.css";
+import gitHubLogo from "../../images/github.png";
+import "./GitLink.css";
 
 /**
  * 
  * @param {*} props expect mark color to alter the highlighted text, uses html tag mark that can have any
  * @returns a blinking live link logo that has the website link and color
  */
-const LiveLink = (props) => {
+const GitLink = (props) => {
     return (
      <>
         <a className="text-light" target="_blank" rel="noreferrer noopener" href={props.link}>
-          <img alt="link" className="live-website" src={liveLinkLogo} />
+          <img alt="link" className="git-website" src={gitHubLogo} />
         </a>
     </>
   );
 };
 
-export default LiveLink;
+export default GitLink;

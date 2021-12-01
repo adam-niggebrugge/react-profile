@@ -1,13 +1,13 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
-import '../styles/Header.css';
-import profilePic from '../../images/ProfilePic.jpg';
+import profilePic from '../images/ProfilePic.jpg';
 
 
 
 export default function About() {
   return (
       <div className="row">
+        <h1>About me</h1>
           <div className="col s12">
             <h2 className="header center offset-s2 page-title">Hello! I am <span className="header-name">Adam Niggebrugge</span>
             </h2>
